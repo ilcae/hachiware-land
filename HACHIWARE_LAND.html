@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>HACHIWARE LAND</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="kim's personal website" />
+    <meta name="author" content="kimimanjaro" />
+    <meta name="keywords" content="hachiwar, Strawberry" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mystyle.css" />
+  </head>
+
+  <!-- HTML type comment-->
+  <body>
+    <div id="intro" class="section">
+      <h1>☆ハチワレの世界☆</h1>
+      <p>Hello everyone! Welcome to <strong>Hachiware's world.</strong></p>
+      <img
+        src="hachiware.jpeg"
+        alt="drawing of a popular cat character"
+        width="200" />
+      <p>This is where Hachiware spends most time.</p>
+      <p>
+        Hachiware's Desk<br />CS Department<br />Reykjavík University<br />Menntavegi
+        1<br />102 Reykjavík<br />Icecube<br />Earth
+      </p>
+      <hr />
+    </div>
+
+    <div id="milk" class="section">
+      <p>
+        Hardware loves to drink <strong>milk</strong>. But not just
+        <em>any</em> milk...
+      </p>
+      <img src="strawberry.png" alt="protein 22g strawberry milk" width="200" />
+      <p>
+        You may know that there are different flavours of this milk. Here are
+        Hachiware's preferences in order:
+      </p>
+      <ol>
+        <li>Strawberry & Vanilla</li>
+        <li>Chocolate (sugarless)</li>
+        <li>Chocolate (with sugar)</li>
+        <li>Salted Caramel</li>
+      </ol>
+      <hr />
+    </div>
+
+    <div id="message" class="section">
+      <p>
+        <strong>Oh! Hachiware wants to tell you something...!</strong><br />
+        <img class="rotation" src="hachiware2.jpeg" width="200" />
+      </p>
+      <a href="https://crouton.net/" target="_blank"
+        >Hachiware's favourite website</a
+      >
+      <p>He says this link will open in a <em>new tab</em>, so don't worry.</p>
+      <hr />
+    </div>
+
+    <div id="table" class="section">
+      <p>Now, we should <em>really</em> discuss <strong>tables.</strong></p>
+      <table>
+        <caption>
+          Tables
+        </caption>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Material</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dining</td>
+            <td>Wood</td>
+          </tr>
+          <tr>
+            <td>Bedside</td>
+            <td>Metal</td>
+          </tr>
+          <tr>
+            <td>Coffee</td>
+            <td>Glass</td>
+          </tr>
+          <tr>
+            <td>Picnic</td>
+          </tr>
+          <tr>
+            <td>Pool</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>We could also write it like this! But conventions, you know.</p>
+
+      <table>
+        <caption>
+          Tables
+        </caption>
+        <tbody>
+          <tr>
+            <th>Type</th>
+            <td>Dining</td>
+            <td>Bedside</td>
+            <td>Coffee</td>
+            <td>Pool</td>
+            <td>Picnic</td>
+          </tr>
+          <tr>
+            <th>Material</th>
+            <td>Wood</td>
+            <td>Plastic</td>
+            <td>Metal</td>
+          </tr>
+        </tbody>
+      </table>
+      <img src="table.png" width="200" />
+      <hr />
+    </div>
+
+    <div id="forms" class="section">
+      <p>Write your nickname:</p>
+      <form>
+        <label for="nickname">Nickname:</label>
+        <input type="text" id="nickname" />
+        <input
+          class="go-button"
+          type="button"
+          onclick="alert('Hello, ' + nickname.value + '!')"
+          value="Go!" />
+        <p>Write your SECRET nickname!</p>
+        <label for="pwd">Secret Nickname:</label>
+        <input type="password" id="pwd" />
+        <input
+          class="go-button"
+          type="button"
+          onclick="alert('I promise I won\'t tell!')"
+          value="Go!" />
+        <p>Pick your favourite colour!</p>
+        <input
+          type="color"
+          id="colorPicker"
+          onchange="
+            document.getElementsByTagName('body')[0].style.backgroundColor =
+              colorPicker.value
+          " />
+      </form>
+      <hr />
+      <a href="#intro">Back to Top</a>
+    </div>
+  </body>
+</html>

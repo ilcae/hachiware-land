@@ -1,0 +1,122 @@
+:root {
+  --hardware-blue: rgb(140, 183, 199);
+  --hardware-pink: #fed6d7;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url(hachiware.jpeg);
+  background-size: 70px;
+  animation: move-bg 20s linear infinite;
+}
+
+h1 {
+  background-color: var(--hardware-pink);
+  color: var(--hardware-blue);
+  text-shadow: 2px 2px 4px white;
+}
+
+p,
+ol,
+table,
+form,
+a {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+a {
+  color: purple;
+}
+
+strong {
+  background-color: var(--hardware-pink);
+}
+
+.go-button {
+  background-color: var(--hardware-pink);
+  border: 5px double var(--hardware-blue);
+  border-radius: 10px;
+}
+.go-button:hover {
+    background-color: var(--hardware-blue)
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap; /* Lets content wrap to next line if needed */
+  gap: 1rem; /* Adds breathing room between items */
+  padding: 1rem; /* Adds space inside the border */
+  border: 5px double var(--hardware-blue);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  align-items: flex-start; /* Aligns items to the top */
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%; /* Never bigger than parent container */
+  height: auto; /* Keeps aspect ratio */
+}
+
+img.rotation:hover {
+  rotate: 360deg;
+  transition: 5s;
+}
+@keyframes anim-rotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes move-bg {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 200% 0;
+  }
+}
+
+/* ===== RESPONSIVE DESIGN (Media Queries) ===== */
+
+/* For tablets and smaller (768px and below) */
+@media screen and (max-width: 768px) {
+  p, ol, table, form, a {
+    font-size: 1.2rem; /* Slightly smaller text on tablets */
+  }
+  
+  .section {
+    flex-direction: column; /* Stack items vertically */
+  }
+  
+  table {
+    font-size: 1rem; /* Make tables more readable */
+  }
+}
+
+/* For phones (480px and below) */
+@media screen and (max-width: 480px) {
+  p, ol, table, form, a {
+    font-size: 1rem; /* Even smaller on phones */
+  }
+  
+  h1 {
+    font-size: 1.5rem; /* Scale down heading */
+  }
+  
+  .section {
+    padding: 0.5rem; /* Less padding on small screens */
+  }
+  
+  body {
+    background-size: 50px; /* Smaller background pattern */
+  }
+}
+
+/*A CSS comment*/
