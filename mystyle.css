@@ -5,10 +5,12 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-image: url(hachiware.jpeg);
   background-size: 70px;
   animation: move-bg 20s linear infinite;
+  color:#fed6d7
 }
 
 h1 {
@@ -16,6 +18,7 @@ h1 {
   color: var(--hardware-blue);
   text-shadow: 2px 2px 4px white;
 }
+
 
 p,
 ol,
